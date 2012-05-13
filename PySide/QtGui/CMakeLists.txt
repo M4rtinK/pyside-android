@@ -275,7 +275,7 @@ ${CMAKE_CURRENT_BINARY_DIR}/PySide/QtGui/qshowevent_wrapper.cpp
 ${CMAKE_CURRENT_BINARY_DIR}/PySide/QtGui/qsizepolicy_wrapper.cpp
 ${CMAKE_CURRENT_BINARY_DIR}/PySide/QtGui/qslider_wrapper.cpp
 ${CMAKE_CURRENT_BINARY_DIR}/PySide/QtGui/qsortfilterproxymodel_wrapper.cpp
-${CMAKE_CURRENT_BINARY_DIR}/PySide/QtGui/qsound_wrapper.cpp
+#${CMAKE_CURRENT_BINARY_DIR}/PySide/QtGui/qsound_wrapper.cpp
 ${CMAKE_CURRENT_BINARY_DIR}/PySide/QtGui/qspaceritem_wrapper.cpp
 ${CMAKE_CURRENT_BINARY_DIR}/PySide/QtGui/qspinbox_wrapper.cpp
 ${CMAKE_CURRENT_BINARY_DIR}/PySide/QtGui/qsplashscreen_wrapper.cpp
