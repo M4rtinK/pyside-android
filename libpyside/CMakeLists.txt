@@ -30,11 +30,17 @@ target_link_libraries(pyside
                       ${SHIBOKEN_LIBRARY}
                       ${QT_QTCORE_LIBRARY})
 
-set_target_properties(pyside PROPERTIES
+if (NOT android)
+    set_target_properties(pyside PROPERTIES
                       VERSION ${BINDING_API_VERSION}
                       SOVERSION "${BINDING_API_MAJOR_VERSION}.${BINDING_API_MINOR_VERSION}"
                       OUTPUT_NAME "pyside${pyside_SUFFIX}${SHIBOKEN_PYTHON_SUFFIX}"
                       DEFINE_SYMBOL PYSIDE_EXPORTS)
+else()
+    set_target_properties(pyside PROPERTIES
+                      OUTPUT_NAME "pyside${pyside_SUFFIX}${SHIBOKEN_PYTHON_SUFFIX}"
+                      DEFINE_SYMBOL PYSIDE_EXPORTS)
+endif()
 
 #
 # install stuff
