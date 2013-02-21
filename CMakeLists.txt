@@ -1,3 +1,10 @@
+INCLUDE(CMakeForceCompiler)
+
+# override compiler check when compiling for Anddroid
+# -> on Android, the check will fail and the whole build then fails
+CMAKE_FORCE_C_COMPILER(arm-linux-androideabi-gcc GNU)
+CMAKE_FORCE_CXX_COMPILER(arm-linux-androideabi-g++ GNU)
+
 include(cmake/Macros/icecc.cmake) # this must be the first line!
 
 project(pysidebindings)
